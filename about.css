@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.about-img {
+    border: 5px solid #fff;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: rotate(0deg);
+}
+
+.text-warning {
+    letter-spacing: 2px;
+}
+
+.page-header {
+    background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.9)), url('../img/about.jpg') center/cover no-repeat;
+}
+
+.about-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.stat-box {
+    background: #fbf3f3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+}
+
+.stat-box i {
+    font-size: 40px;
+}
+
+h2 {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
